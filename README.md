@@ -24,11 +24,11 @@ Make sure to make all required changes in the application, some necessary change
 ##### Demo comments/likes/dislikes
 
 ## Screenshots
-![i1](/app/screenshots/Screenshot_2020-11-30-19-31-05-357_com.simpleharmonics.kismis.jpg?raw=true)
-![i2](/app/screenshots/Screenshot_2020-11-30-19-34-52-296_com.simpleharmonics.kismis.jpg?raw=true)
-![i3](/app/screenshots/Screenshot_2020-11-30-19-35-10-825_com.simpleharmonics.kismis.jpg?raw=true)
-![i4](/app/screenshots/Screenshot_2020-11-30-19-35-17-848_com.simpleharmonics.kismis.jpg?raw=true)
-![i5](/app/screenshots/Screenshot_2020-11-30-19-36-00-049_com.simpleharmonics.kismis.jpg?raw=true)
-![i6](/app/screenshots/Screenshot_2020-11-30-19-36-04-175_com.simpleharmonics.kismis.jpg?raw=true)
+<img src="https://github.com/Simple-Harmonics/Kismis/blob/master/app/screenshots/Screenshot_2020-11-30-19-31-05-357_com.simpleharmonics.kismis.jpg" width="360">
+<img src="https://github.com/Simple-Harmonics/Kismis/blob/master/app/screenshots/Screenshot_2020-11-30-19-34-52-296_com.simpleharmonics.kismis.jpg" width="360">
+<img src="https://github.com/Simple-Harmonics/Kismis/blob/master/app/screenshots/Screenshot_2020-11-30-19-35-10-825_com.simpleharmonics.kismis.jpg" width="360">
+<img src="https://github.com/Simple-Harmonics/Kismis/blob/master/app/screenshots/Screenshot_2020-11-30-19-35-17-848_com.simpleharmonics.kismis.jpg" width="360">
+<img src="https://github.com/Simple-Harmonics/Kismis/blob/master/app/screenshots/Screenshot_2020-11-30-19-36-00-049_com.simpleharmonics.kismis.jpg" width="360">
+<img src="https://github.com/Simple-Harmonics/Kismis/blob/master/app/screenshots/Screenshot_2020-11-30-19-36-04-175_com.simpleharmonics.kismis.jpg" width="360">
 
 You are responsible for your actions!
