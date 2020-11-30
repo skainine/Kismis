@@ -14,4 +14,5 @@ Firebase: https://firebase.google.com/docs/android/setup
 Amplify: https://docs.amplify.aws/start/q/integration/android
 
 Make sure to make all required changes in the application, some necessary changes are indicated with //TODO within the source code.
+
 You are responsible for your actions!
