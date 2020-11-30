@@ -15,4 +15,11 @@ Amplify: https://docs.amplify.aws/start/q/integration/android
 
 Make sure to make all required changes in the application, some necessary changes are indicated with //TODO within the source code.
 
+# Features
+##### Demo videos for swiping up
+##### Demo chat screen
+##### Demo profile screen
+##### Demo video recorder(uncomment to start it's working)
+##### Demo comments/likes/dislikes
+
 You are responsible for your actions!
