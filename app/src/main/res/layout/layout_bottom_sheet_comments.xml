@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/ere"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:padding="@dimen/padding_4"
+        android:src="@drawable/ic_linear_scale_gray_24"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cdi"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_below="@+id/ere"
+        android:overScrollMode="never" />
+
+    <RelativeLayout
+        android:id="@+id/tod"
+        android:layout_width="match_parent"
+        android:layout_height="50.5dp"
+        android:layout_below="@+id/cdi">
+
+        <View
+            android:id="@+id/ufs"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="49.5dp"
+            android:layout_below="@+id/ufs"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/qai"
+            android:background="@null"
+            android:hint="@string/type_a_comment"
+            android:padding="@dimen/padding_12" />
+
+        <ImageButton
+            android:id="@+id/qai"
+            android:layout_width="49.5dp"
+            android:layout_height="49.5dp"
+            android:layout_below="@+id/ufs"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:padding="@dimen/padding_4"
+            android:src="@drawable/ic_mode_comment_gray_24"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

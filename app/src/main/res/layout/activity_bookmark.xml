@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uis.activities.BookmarkActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ywn"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/drawable_primary_gradient"
+        android:elevation="@dimen/toolbar_elevation"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dvi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

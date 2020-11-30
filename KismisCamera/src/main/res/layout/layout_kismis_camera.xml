@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/ovc"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="@dimen/margin_16"
+        android:max="100" />
+
+    <com.camerakit.CameraKitView
+        android:id="@+id/tgf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/cag"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_keyboard_arrow_up_white_24" />
+
+    <RelativeLayout
+        android:id="@+id/cag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTransparentDark"
+        android:padding="@dimen/padding_20">
+
+        <ImageButton
+            android:id="@+id/gvp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/drawable_capture_button"
+            android:contentDescription="@null"
+            android:scaleType="center" />
+
+        <ImageButton
+            android:id="@+id/loo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/ic_flip_camera_android_white_24" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

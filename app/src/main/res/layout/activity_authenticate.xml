@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".uis.activities.AuthenticateActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/kbd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_20"
+        android:paddingTop="@dimen/padding_50"
+        android:paddingEnd="@dimen/padding_20"
+        android:paddingBottom="@dimen/padding_50"
+        android:text="@string/login_benefits"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_bigger"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/qrb"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_64"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ltw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_4"
+        android:visibility="gone">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:gravity="center"
+            android:padding="@dimen/padding_16"
+            android:text="@string/login_with_google"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:icon="@drawable/googleg_standard_color_18"
+            app:iconTint="#FFFFFF" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ddv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/padding_8"
+            android:text="@string/login_later"
+            android:textColor="#FFFFFF"
+            app:textAllCaps="true" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_4"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/padding_8"
+            android:text="@string/by_tapping_login_you_agree_to_tos"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_smallest" />
+
+    </LinearLayout>
+
+</RelativeLayout>

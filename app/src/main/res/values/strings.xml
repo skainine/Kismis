@@ -1,0 +1,72 @@
+<resources>
+
+    <!--    Firebase-->
+    <string name="firestore_collection_users">Users</string>
+    <string name="firestore_collection_user">User</string>
+    <string name="firestore_document_details">Details</string>
+    <string name="firestore_field_aws_username">AWSUsername</string>
+    <string name="firestore_field_aws_password">AWSPassword</string>
+    <string name="firestore_field_login_type">LoginType</string>
+    <string name="firestore_field_authentication_provider">Provider</string>
+    <string name="firestore_field_time_stamp">Stamp</string>
+    <string name="firestore_field_tag">TAG</string>
+    <string name="firestore_field_name">Name</string>
+    <string name="firestore_field_total_likes">TotalLikes</string>
+    <string name="firestore_field_followers">Followers</string>
+    <string name="firestore_field_dp_link">DPLink</string>
+    <string name="firestore_field_created">Created</string>
+    <string name="firestore_field_reload_comments">ReloadComments</string>
+    <string name="firestore_field_reload_comment_reactions">ReloadCommentReactions</string>
+    <string name="firestore_field_reload_videos">ReloadVideos</string>
+    <string name="firestore_field_reload_video_reactions">ReloadVideoReactions</string>
+    <string name="firestore_field_login_type_google">Google</string>
+    <string name="firestore_collection_videos">Videos</string>
+    <string name="firestore_collection_comments">Comments</string>
+
+    <string name="firestore_field_thumbnail_link">ThumbnailLink</string>
+    <string name="firestore_field_video_link">VideoLink</string>
+    <string name="firestore_field_owner_id">OwnerID</string>
+    <string name="firestore_field_owner_tag">OwnerTAG</string>
+    <string name="firestore_field_comment_text">Comment</string>
+    <string name="firestore_field_comment_likes">Likes</string>
+    <string name="firestore_field_comment_dislikes">Dislikes</string>
+
+    <string name="app_name">Kismis</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="reply">Reply</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="type_a_comment">Type a comment</string>
+    <string name="message">Message</string>
+    <string name="follow">Follow</string>
+    <string name="search">Search</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_benefits">Logging in enables you to chat, comment and get more personalized video recommendations!</string>
+
+    <string name="login_later">login Later</string>
+    <string name="by_tapping_login_you_agree_to_tos">By tapping LOGIN WITH GOOGLE you agree to the Terms and Conditions</string>
+    <string name="skip">Skip</string>
+    <string name="select_language_title">Choose Video Languages</string>
+    <string name="select_language_description">Choose the languages you would like to watch videos in</string>
+    <string name="settings">Settings</string>
+    <string name="activity_title_settings">Settings</string>
+
+    <!-- Settings Activity -->
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="search_results">Search Results</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="account">Account</string>
+    <string name="pref_title_display_name">DisplayName</string>
+    <string name="pref_title_display_id">Display ID</string>
+    <string name="pref_title_joined">Joined Kismis</string>
+    <string name="search_title">Search</string>
+    <string name="unknown">Unknown</string>
+    <string name="video_caption">Video Caption</string>
+    <string name="please_login_to_continue">Please login to continue</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="terms_of_use_link">https://link.com</string>
+
+</resources>

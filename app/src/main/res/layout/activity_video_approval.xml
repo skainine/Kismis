@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fpu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uis.activities.VideoApprovalActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/ves"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:resize_mode="zoom"
+            app:use_controller="false" />
+
+    </FrameLayout>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/ufs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:max="10"
+        android:progress="0"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:indicatorColor="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/oqe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8"
+        android:alpha="0.8"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:contentDescription="@null"
+        android:padding="@dimen/padding_8"
+        android:src="@drawable/ic_arrow_back_white_24" />
+
+    <ImageView
+        android:id="@+id/ubz"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_play_arrow_white_24"
+        android:visibility="gone" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/bhq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tmz" />
+
+    <RelativeLayout
+        android:id="@+id/tmz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTransparentDark">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pyk"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="@string/video_caption"
+            android:maxLength="200"
+            android:padding="@dimen/padding_8"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/xhj"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_appintro_next" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

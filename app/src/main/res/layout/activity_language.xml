@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uis.activities.LanguageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/zpq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/margin_20"
+            android:padding="@dimen/padding_4"
+            android:text="@string/next"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:iconTint="#FFFFFF"
+            app:icon="@drawable/ic_navigate_next_white_24"
+            app:iconGravity="end" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/yze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zpq"
+            android:layout_marginTop="@dimen/margin_8"
+            android:paddingStart="@dimen/padding_32"
+            android:paddingEnd="@dimen/margin_32"
+            android:text="@string/select_language_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_biggest"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yze"
+            android:paddingStart="@dimen/padding_32"
+            android:paddingTop="@dimen/padding_4"
+            android:paddingEnd="@dimen/margin_32"
+            android:paddingBottom="@dimen/margin_32"
+            android:text="@string/select_language_description"
+            android:textSize="@dimen/text_small" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/plu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/padding_32"
+        android:paddingEnd="@dimen/padding_32" />
+
+</LinearLayout>

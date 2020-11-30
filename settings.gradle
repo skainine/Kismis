@@ -1,0 +1,3 @@
+include ':KismisCamera'
+include ':app'
+rootProject.name = "Kismis"

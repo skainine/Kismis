@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <ImageButton
+        android:id="@+id/ulm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:padding="@dimen/padding_4"
+        android:src="@drawable/ic_linear_scale_gray_24"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ulm"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_32"
+        android:paddingEnd="@dimen/margin_32"
+        android:text="@string/please_login_to_continue"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/text_big"
+        android:gravity="center"
+        android:padding="@dimen/padding_16"
+        android:text="@string/login_with_google"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:icon="@drawable/googleg_standard_color_18"
+        app:iconTint="#FFFFFF" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/bqn"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/xiu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_20"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="@dimen/padding_8"
+        android:text="@string/by_tapping_login_you_agree_to_tos"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_smallest" />
+
+</RelativeLayout>
