@@ -17,9 +17,18 @@ Make sure to make all required changes in the application, some necessary change
 
 # Features
 ##### Demo videos for swiping up
+##### Demo recommendations
 ##### Demo chat screen
 ##### Demo profile screen
 ##### Demo video recorder(uncomment to start it's working)
 ##### Demo comments/likes/dislikes
+
+## Screenshots
+![i1](/app/screenshots/Screenshot_2020-11-30-19-31-05-357_com.simpleharmonics.kismis.jpg?raw=true)
+![i2](/app/screenshots/Screenshot_2020-11-30-19-34-52-296_com.simpleharmonics.kismis.jpg?raw=true)
+![i3](/app/screenshots/Screenshot_2020-11-30-19-35-10-825_com.simpleharmonics.kismis.jpg?raw=true)
+![i4](/app/screenshots/Screenshot_2020-11-30-19-35-17-848_com.simpleharmonics.kismis.jpg?raw=true)
+![i5](/app/screenshots/Screenshot_2020-11-30-19-36-00-049_com.simpleharmonics.kismis.jpg?raw=true)
+![i6](/app/screenshots/Screenshot_2020-11-30-19-36-04-175_com.simpleharmonics.kismis.jpg?raw=true)
 
 You are responsible for your actions!
