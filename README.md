@@ -7,7 +7,7 @@ Snapping Recyclerview video player(verical swiping) with firebase + amplify work
 
 ## TODO
 To further customize and use the project, add your configuration files for firebase and amplify to allow account creation, persistence, video upload etc. 
-Some commented code is already present in the source for this purpose see docs for more information
+Some commented code is already present in the source for this purpose. Check docs for more information
 
 Firebase: https://firebase.google.com/docs/android/setup
 
