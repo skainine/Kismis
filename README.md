@@ -1,5 +1,5 @@
 # Kismis
-Tiktok like Snapping Recyclerview video player with firebase + amplify working demo
+Snapping Recyclerview video player(verical swiping) with firebase + amplify working demo
 
 ## Application ready to run:
 
