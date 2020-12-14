@@ -3,7 +3,7 @@ Snapping Recyclerview video player(vertical swiping) with firebase + amplify wor
 
 ## Application ready to run:
 
-[Download the apk file and install it on an android device](https://github.com/Simple-Harmonics/Kismis/tree/master/app/build/outputs/apk/debug)
+[Download the apk file and install it on an android device](https://github.com/Simple-Harmonics/Kismis/raw/master/app/build/outputs/apk/debug/app-debug.apk)
 
 ## TODO
 To further customize and use the project, add your configuration files for firebase and amplify to allow account creation, persistence, video upload etc. 
