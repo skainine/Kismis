@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
 import com.simpleharmonics.kismis.R;
@@ -136,10 +137,10 @@ public class VideoGeneralActivity extends AppCompatActivity implements VideoInte
         final long videoLikes = 28374;
         final long videoDislikes = 83979;
         final long videoComments = 113979;
-        final String videoCaption = "#cringe #boring";
+        final String videoCaption = "#lorem #ipsum";
         final String videoMusic = "song name here";
         final String ownerID = "";
-        final String ownerTAG = "@wall_e";
+        final String ownerTAG = "@lorem_ipsum";
         final String ownerDPLink = "";
         final int userLikeStatus = 1;
 
@@ -176,14 +177,14 @@ public class VideoGeneralActivity extends AppCompatActivity implements VideoInte
 
     private void updateLikeDislikeStatus(CustomVideo customVideo) {
         if (customVideo.getUserLikeStatus() == -1) {
-            ibLike.setImageDrawable(getDrawable(R.drawable.ic_like_white_24));
-            ibDislike.setImageDrawable(getDrawable(R.drawable.ic_dislike_primary_24));
+            ibLike.setImageDrawable(ContextCompat.getDrawable(VideoGeneralActivity.this, R.drawable.ic_like_white_24));
+            ibDislike.setImageDrawable(ContextCompat.getDrawable(VideoGeneralActivity.this, R.drawable.ic_dislike_primary_24));
         } else if (customVideo.getUserLikeStatus() == 1) {
-            ibLike.setImageDrawable(getDrawable(R.drawable.ic_like_primary_24));
-            ibDislike.setImageDrawable(getDrawable(R.drawable.ic_dislike_white_24));
+            ibLike.setImageDrawable(ContextCompat.getDrawable(VideoGeneralActivity.this, R.drawable.ic_like_primary_24));
+            ibDislike.setImageDrawable(ContextCompat.getDrawable(VideoGeneralActivity.this, R.drawable.ic_dislike_white_24));
         } else {
-            ibLike.setImageDrawable(getDrawable(R.drawable.ic_like_white_24));
-            ibDislike.setImageDrawable(getDrawable(R.drawable.ic_dislike_white_24));
+            ibLike.setImageDrawable(ContextCompat.getDrawable(VideoGeneralActivity.this, R.drawable.ic_like_white_24));
+            ibDislike.setImageDrawable(ContextCompat.getDrawable(VideoGeneralActivity.this, R.drawable.ic_dislike_white_24));
         }
     }
 
@@ -197,7 +198,7 @@ public class VideoGeneralActivity extends AppCompatActivity implements VideoInte
         tvMusic.setText(customVideo.getVideoMusic());
 
         if (customVideo.getOwnerDPLink() == null || customVideo.getOwnerDPLink().isEmpty()) {
-            Glide.with(VideoGeneralActivity.this).load(getDrawable(R.drawable.avatar)).into(ivOwnerProfile);
+            Glide.with(VideoGeneralActivity.this).load(ContextCompat.getDrawable(VideoGeneralActivity.this, R.drawable.avatar)).into(ivOwnerProfile);
         } else {
             Glide.with(VideoGeneralActivity.this).load(customVideo.getOwnerDPLink()).into(ivOwnerProfile);
         }

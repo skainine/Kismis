@@ -77,7 +77,7 @@ public class FragmentChat extends Fragment {
                 Log.e(TAG, "Kismis: getChatList: fragmentActivity is null");
             } else {
                 for (int i = 0; i < 20; i++) {
-                    ChatAdapter.CustomChat customChat = new ChatAdapter.CustomChat("", "", "War lord", "4:34PM", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.");
+                    ChatAdapter.CustomChat customChat = new ChatAdapter.CustomChat("", "", "Lorem Ipsum", "4:34PM", "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.");
                     customChatList.add(customChat);
                 }
                 chatAdapter = new ChatAdapter(fragmentActivity, customChatList);

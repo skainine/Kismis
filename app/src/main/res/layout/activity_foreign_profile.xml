@@ -39,7 +39,7 @@
                     android:layout_marginStart="@dimen/margin_20"
                     android:layout_marginEnd="@dimen/margin_20"
                     android:gravity="center_vertical"
-                    android:text="Alien Walker"
+                    android:text="Lorem Ipsumr"
                     android:textColor="#FFFFFF"
                     android:textSize="@dimen/text_bigger"
                     android:textStyle="bold" />
@@ -51,7 +51,7 @@
                     android:layout_marginStart="@dimen/margin_20"
                     android:layout_marginEnd="@dimen/margin_20"
                     android:layout_marginBottom="@dimen/margin_8"
-                    android:text="\@alan_232"
+                    android:text="\@lorem_ipsum"
                     app:fontFamily="@font/open_sans_light_italic" />
 
                 <LinearLayout

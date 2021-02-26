@@ -69,7 +69,7 @@ public class BottomSheetComments extends BottomSheetDialogFragment implements Co
 
         String commentID = "dsakfnsjkl";
         String commentOwnerID = "";
-        String commentOwnerTAG = "manyank_121";
+        String commentOwnerTAG = "lorem_ipsum";
         String commentOwnerDPLink = "";
         String commentTime = "5h";
         String commentText;

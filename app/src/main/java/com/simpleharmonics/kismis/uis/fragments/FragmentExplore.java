@@ -101,7 +101,7 @@ public class FragmentExplore extends Fragment implements ProfileTileInterface {
                 pbProgressRecommendations.hide();
                 customRecommendedProfileTileList = new ArrayList<>();
                 for (int i = 0; i < 20; i++) {
-                    ProfileTileAdapter.CustomProfileTile customProfileTile = new ProfileTileAdapter.CustomProfileTile("", "Kiki", "@noob", "", false, 24198, 2352, 235);
+                    ProfileTileAdapter.CustomProfileTile customProfileTile = new ProfileTileAdapter.CustomProfileTile("", "Lorem Ipsum", "@lorem_ipsum", "", false, 24198, 2352, 235);
                     customRecommendedProfileTileList.add(customProfileTile);
                 }
                 recommendedProfileTileAdapter = new ProfileTileAdapter(fragmentActivity, FragmentExplore.this, customRecommendedProfileTileList);
@@ -150,7 +150,7 @@ public class FragmentExplore extends Fragment implements ProfileTileInterface {
                 pbProgressSearch.hide();
                 customSearchProfileTileList = new ArrayList<>();
                 for (int i = 0; i < 20; i++) {
-                    ProfileTileAdapter.CustomProfileTile customProfileTile = new ProfileTileAdapter.CustomProfileTile("", "Kiki", "@noob", "", i % 3 == 0, 24198, 2352, 235);
+                    ProfileTileAdapter.CustomProfileTile customProfileTile = new ProfileTileAdapter.CustomProfileTile("", "Lorem Ipsum", "@lorem_ipsum", "", i % 3 == 0, 24198, 2352, 235);
                     customSearchProfileTileList.add(customProfileTile);
                 }
                 searchProfileTileAdapter = new ProfileTileAdapter(fragmentActivity, FragmentExplore.this, customSearchProfileTileList);

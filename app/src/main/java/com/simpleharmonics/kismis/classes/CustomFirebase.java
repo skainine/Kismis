@@ -268,10 +268,10 @@ public class CustomFirebase {
             final long videoLikes = 28374;
             final long videoDislikes = 83979;
             final long videoComments = 113979;
-            final String videoCaption = "#cringe #boring";
+            final String videoCaption = "#lorem #ipsum";
             final String videoMusic = "song name here";
             final String ownerID = "";
-            final String ownerTAG = "@wall_e";
+            final String ownerTAG = "@lorem_ipsum";
             final String ownerDPLink = "";
             final int userLikeStatus = 1;
 

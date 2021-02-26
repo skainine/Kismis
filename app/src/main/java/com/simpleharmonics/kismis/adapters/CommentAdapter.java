@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -20,8 +21,8 @@ import java.util.List;
 
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CustomViewHolder> {
 
-    private Context context;
-    private List<CustomComment> customCommentList;
+    private final Context context;
+    private final List<CustomComment> customCommentList;
 
     public CommentAdapter(Context context, List<CustomComment> customCommentList) {
         this.context = context;
@@ -41,7 +42,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CustomVi
         ShapeableImageView cvOwnerDP = customViewHolder.itemView.findViewById(R.id.rxh);
         String commentOwnerDPLink = customComment.getCommentOwnerDPLink();
         if (commentOwnerDPLink == null || commentOwnerDPLink.isEmpty()) {
-            Glide.with(context).load(context.getDrawable(R.drawable.avatar)).into(cvOwnerDP);
+            Glide.with(context).load(ContextCompat.getDrawable(context, R.drawable.avatar)).into(cvOwnerDP);
         } else {
             Glide.with(context).load(commentOwnerDPLink).into(cvOwnerDP);
         }
@@ -83,14 +84,14 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CustomVi
 
     private void toggleUserLikeStatus(CustomComment customComment, ImageButton ibLike, ImageButton ibDislike) {
         if (customComment.getUserReaction() == -1) {
-            ibLike.setImageDrawable(context.getDrawable(R.drawable.ic_like_gray_24));
-            ibDislike.setImageDrawable(context.getDrawable(R.drawable.ic_dislike_primary_24));
+            ibLike.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_like_gray_24));
+            ibDislike.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_dislike_primary_24));
         } else if (customComment.getUserReaction() == 1) {
-            ibLike.setImageDrawable(context.getDrawable(R.drawable.ic_like_primary_24));
-            ibDislike.setImageDrawable(context.getDrawable(R.drawable.ic_dislike_gray_24));
+            ibLike.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_like_primary_24));
+            ibDislike.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_dislike_gray_24));
         } else {
-            ibLike.setImageDrawable(context.getDrawable(R.drawable.ic_like_gray_24));
-            ibDislike.setImageDrawable(context.getDrawable(R.drawable.ic_dislike_gray_24));
+            ibLike.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_like_gray_24));
+            ibDislike.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_dislike_gray_24));
         }
     }
 
