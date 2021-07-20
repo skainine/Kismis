@@ -37,7 +37,7 @@ import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DataSpec;
 import com.google.android.exoplayer2.upstream.DefaultAllocator;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
-import com.google.android.exoplayer2.upstream.cache.CacheUtil;
+//import com.google.android.exoplayer2.upstream.cache.CacheUtil;
 import com.google.android.exoplayer2.util.Util;
 import com.simpleharmonics.kismis.R;
 import com.simpleharmonics.kismis.adapters.MainPlayerAdapter;
@@ -231,18 +231,18 @@ public class SnappingExoRecycler extends RecyclerView {
         setPlayState(PlayState.PLAYING);
     }
 
-    private void cacheVideo(Uri videoUri) {
-        DataSpec dataSpec = new DataSpec(videoUri);
-//        CacheUtil.ProgressListener progressListener = (requestLength, bytesCached, newBytesCached) -> Log.e(TAG, String.valueOf(bytesCached * 100.0 / requestLength));
-        DataSource dataSource = new DefaultDataSourceFactory(contextHolder, Util.getUserAgent(contextHolder, "Kismis")).createDataSource();
-        new Thread(() -> {
-            try {
-                CacheUtil.cache(dataSpec, (CustomGlobal.getSimpleCache(contextHolder)), CacheUtil.DEFAULT_CACHE_KEY_FACTORY, dataSource, null/*progressListener*/, null);
-            } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-    }
+//    private void cacheVideo(Uri videoUri) {
+//        DataSpec dataSpec = new DataSpec(videoUri);
+////        CacheUtil.ProgressListener progressListener = (requestLength, bytesCached, newBytesCached) -> Log.e(TAG, String.valueOf(bytesCached * 100.0 / requestLength));
+//        DataSource dataSource = new DefaultDataSourceFactory(contextHolder, Util.getUserAgent(contextHolder, "Kismis")).createDataSource();
+//        new Thread(() -> {
+//            try {
+//                CacheUtil.cache(dataSpec, (CustomGlobal.getSimpleCache(contextHolder)), CacheUtil.DEFAULT_CACHE_KEY_FACTORY, dataSource, null/*progressListener*/, null);
+//            } catch (IOException | InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }).start();
+//    }
 
     private void removePlayerView(PlayerView playerView) {
         ViewGroup viewGroup = (ViewGroup) playerView.getParent();
